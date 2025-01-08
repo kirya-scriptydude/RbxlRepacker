@@ -1,0 +1,1 @@
+This program decompresses .rbxl files into .decompressed.rbxl. This is used for Noblox because I cannot be bothered to write LZ4 and ZSTD myself lol
