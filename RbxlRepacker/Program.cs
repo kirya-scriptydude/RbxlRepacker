@@ -64,8 +64,8 @@ using (FileStream stream = File.OpenRead(filePath)) {
         }
 
         writer.Write(chunkName);
-        writer.Write(size);
         writer.Write(0); //compressed size
+        writer.Write(size);
         writer.Write(0); //reserved
         writer.Write(data); //data
 
