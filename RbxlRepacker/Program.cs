@@ -19,7 +19,8 @@ if (info.Extension != ".rbxl") {
     return;
 }
 
-FileStream fileStr = File.Create($"{info.Name}.decompressed.rbxl");
+string originalName = info.Name.Replace(".rbxl", "");
+FileStream fileStr = File.Create($"{originalName}.decompressed.rbxl");
 BinaryWriter writer = new(fileStr);
 
 ulong fileSize = 32;
